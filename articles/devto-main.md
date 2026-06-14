@@ -117,8 +117,7 @@ The free package is complete and useful forever. You get continuous monitoring, 
 
 **Cardinal Cloud** (paid, waitlist open) will add production history, deploy-to-regression tracking, and team alerts — starting at $19/month.
 
-**Website:** https://cardinal.dev
-**GitHub:** https://github.com/wilfridterry/query-guard
+**GitHub:** https://github.com/wilfridterry/cardinal
 **Packagist:** https://packagist.org/packages/cardinal/laravel
 
 Open an issue if something doesn't work. Feedback directly shapes what gets built next.
