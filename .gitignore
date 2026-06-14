@@ -1,0 +1,10 @@
+/vendor/
+/node_modules/
+/.forge-code/
+.env
+.env.*
+!.env.example
+*.log
+.phpunit.result.cache
+.DS_Store
+Thumbs.db

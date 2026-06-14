@@ -1,0 +1,58 @@
+{
+    "name": "cardinal/laravel",
+    "description": "Production query health for Laravel — continuous SQL monitoring, deploy regression tracking, AI-powered fix recipes.",
+    "keywords": ["laravel", "query", "performance", "monitoring", "n-plus-one", "slow-query"],
+    "homepage": "https://cardinal.dev",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cardinal",
+            "email": "hello@cardinal.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "nunomaduro/collision": "^7.0|^8.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.20|^3.0",
+        "pestphp/pest-plugin-laravel": "^2.3|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cardinal\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cardinal\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test:coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint",
+        "format:check": "vendor/bin/pint --test"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cardinal\\CardinalServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
